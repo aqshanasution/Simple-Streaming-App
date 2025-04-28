@@ -9,7 +9,7 @@ function searchYouTube() {
                 q: searchQuery,
                 type: 'video',
                 maxResults: 20, // Jumlah hasil pencarian yang diinginkan
-                key: 'AIzaSyC0ErOAyRFbg0JBQ37qUQBH2HQ3Ro2XaGk' // Ganti dengan kunci API YouTube Anda
+                key: 'YOUTUBE API KEY' // Ganti dengan kunci API YouTube Anda
             },
             success: function(data) {
                 if (data.items.length > 0) {
@@ -64,7 +64,7 @@ function getChannelInfo(channelId) {
         data: {
             part: 'snippet',
             id: channelId,
-            key: 'AIzaSyC0ErOAyRFbg0JBQ37qUQBH2HQ3Ro2XaGk' // Ganti dengan kunci API YouTube Anda
+            key: 'YOUTUBE API KEY' // Ganti dengan kunci API YouTube Anda
         },
         success: function(data) {
             if (data.items.length > 0) {
